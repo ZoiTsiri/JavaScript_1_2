@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Υπολογισμός περιμέτρου και εμβαδού κύκλου</h1>
+    <button onclick="ipologismosPerimetrou()">Υπολογισμός Περιμέτρου</button>
+    <button onclick="ipologismosEmbadou()">Υπολογισμός Εμβαδού</button>
+     
+<script>
+    const p = 3.15
+    function ipologismosPerimetrou() {
+        const R = prompt("Συμπληρωσε την ακτίνα του κύκλου");
+        const perimetrosKyklou = 2 * p * R
+        alert("Η περίμετρος του κύκλου ειναι " + perimetrosKyklou);
+    }
+    function ipologismosEmbadou() {
+        const R = prompt("Συμπληρωσε την ακτίνα του κύκλου");
+        const embadoKyklou = p * Math.pow(R,2);
+        alert("Το εμβαδό του κύκλου ειναι " + embadoKyklou);
+    }
+</script>
+    
+</body>
+</html>
